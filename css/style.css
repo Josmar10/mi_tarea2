@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.d-flex{
+    display: flex;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1B2631;
+}
+
+.calculator{
+    width: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator span{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+}
+
+.calculator span:hover{
+    cursor: pointer;
+}
+
+.calculator .operations{
+    background: #393e46;
+    color: #fff;
+}
+
+.calculator .clear{
+    background: #1a8f0f;
+    color: #fff;
+}
+
+.calculator .inputArea{
+    grid-column: span 4;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+}
+
+.calculator .plus {
+    grid-row: span 2;
+    height: 120px;
+    background:#393e46;
+    color: #fff;
+    line-height: 120px;
+}
+
+.calculator .equal{
+    width: 120px;
+    grid-column: span 2;
+    background: #1a8f0f;
+    font-size: 1.8em;
+}
+
+#history{
+    width: 180px;
+    height: 300px;
+    font-size: 1.1em;
+    background: aqua;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+#history::-webkit-scrollbar{
+    width: 0;
+}
+
+#history h3{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+#history p:last-child{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #eee;
+}
+
+.borrar{
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #426386;
+    border-style: solid;
+}
